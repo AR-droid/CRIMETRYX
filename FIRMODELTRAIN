@@ -1,0 +1,133 @@
+import pandas as pd
+import spacy
+import re
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+import numpy as np
+from typing import List, Dict
+
+# Load English language model for spaCy
+nlp = spacy.load("en_core_web_sm")
+
+class FIRAnalyzer:
+    def __init__(self):
+        self.vectorizer = TfidfVectorizer(max_features=1000, stop_words='english')
+        self.scaler = StandardScaler()
+        self.kmeans = KMeans(n_clusters=3, random_state=42)
+        
+    def preprocess_text(self, text: str) -> str:
+        """Clean and preprocess FIR text"""
+        # Remove special characters and extra whitespace
+        text = re.sub(r'[^\w\s]', '', text.lower())
+        text = re.sub(r'\s+', ' ', text.strip())
+        return text
+
+    def extract_entities(self, text: str) -> Dict[str, List[str]]:
+        """Extract key entities from FIR text"""
+        doc = nlp(text)
+        entities = {
+            'PERSON': [],
+            'LOCATION': [],
+            'ORGANIZATION': [],
+            'DATE': [],
+            'CRIME': []
+        }
+        
+        # Standard entity extraction
+        for ent in doc.ents:
+            if ent.label_ == 'PERSON':
+                entities['PERSON'].append(ent.text)
+            elif ent.label_ == 'GPE':
+                entities['LOCATION'].append(ent.text)
+            elif ent.label_ == 'ORG':
+                entities['ORGANIZATION'].append(ent.text)
+            elif ent.label_ == 'DATE':
+                entities['DATE'].append(ent.text)
+                
+        # Custom crime keywords (expand this list as needed)
+        crime_keywords = {'murder', 'theft', 'robbery', 'assault', 'fraud', 'kidnapping'}
+        for token in doc:
+            if token.text.lower() in crime_keywords:
+                entities['CRIME'].append(token.text)
+                
+        return entities
+
+    def load_and_process_data(self, file_path: str) -> pd.DataFrame:
+        """Load FIR dataset and process it"""
+        # Assuming CSV file with 'fir_text' column
+        df = pd.read_csv(file_path)
+        
+        # Preprocess text
+        df['cleaned_text'] = df['fir_text'].apply(self.preprocess_text)
+        
+        # Extract entities
+        df['entities'] = df['fir_text'].apply(self.extract_entities)
+        
+        return df
+
+    def train_model(self, df: pd.DataFrame):
+        """Train the model to cluster FIRs and identify suspects"""
+        # Vectorize the text
+        tfidf_matrix = self.vectorizer.fit_transform(df['cleaned_text'])
+        
+        # Scale the features
+        scaled_features = self.scaler.fit_transform(tfidf_matrix.toarray())
+        
+        # Perform clustering
+        self.kmeans.fit(scaled_features)
+        df['cluster'] = self.kmeans.labels_
+        
+        return df
+
+    def get_suspect_list(self, df: pd.DataFrame) -> Dict[int, List[str]]:
+        """Generate suspect list based on clusters"""
+        suspect_clusters = {}
+        
+        for cluster_id in df['cluster'].unique():
+            cluster_df = df[df['cluster'] == cluster_id]
+            suspects = []
+            
+        
+            for entities in cluster_df['entities']:
+                suspects.extend(entities['PERSON'])
+            
+
+            suspect_clusters[cluster_id] = list(set(suspects))
+            
+        return suspect_clusters
+
+def main():
+    
+    analyzer = FIRAnalyzer()
+    
+   
+    try:
+        
+        df = analyzer.load_and_process_data('fir_dataset.csv')
+        
+       
+        df = analyzer.train_model(df)
+  
+        suspect_clusters = analyzer.get_suspect_list(df)
+        
+     
+        print("FIR Analysis Results:")
+        print("\nDataset Overview:")
+        print(df[['cleaned_text', 'cluster']].head())
+        
+        print("\nSuspect Lists by Cluster:")
+        for cluster_id, suspects in suspect_clusters.items():
+            print(f"Cluster {cluster_id}:")
+            for suspect in suspects:
+                print(f"  - {suspect}")
+                
+        print("\nSample Entities from First FIR:")
+        print(df['entities'].iloc[0])
+        
+    except FileNotFoundError:
+        print("Error: Dataset file not found. Please provide a valid FIR dataset.")
+        print("Expected CSV format: column 'fir_text' with FIR descriptions")
+
+if __name__ == "__main__":
+    main()
