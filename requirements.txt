@@ -1,0 +1,31 @@
+# === Backend Dependencies ===
+flask
+flask-cors
+flask-restful
+gunicorn
+
+# === Database & Graph Processing ===
+neo4j
+networkx
+
+# === Machine Learning & Data Processing ===
+numpy  # Removed strict version to resolve conflicts
+pandas
+scikit-learn
+joblib
+scipy
+
+# === NLP & Text Processing ===
+nltk
+textblob
+spacy
+gensim
+
+# === Visualization ===
+matplotlib
+seaborn
+
+# === Utility Libraries ===
+requests
+openpyxl
+tqdm
