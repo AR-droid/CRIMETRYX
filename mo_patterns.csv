@@ -1,0 +1,674 @@
+SuspectID,PatternSequence,WeaponProgression,ComplexityScore
+SUS-a60645,ATM gas cutter robbery → Home invasion robbery,Iron Pipe → Bare Hands,5
+SUS-094576,Black magic sacrifice → Fake encounter killing,Rope → Pistol,2
+SUS-8cb6d7,Sand mafia killing → Witness elimination,Country-made Gun → Bare Hands,3
+SUS-8cb6d7,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,3
+SUS-733f8d,Land-related murder → Gang execution,Machete → Bare Hands,2
+SUS-5e6f69,Jewelry shop heist → Money laundering,Pistol → Bare Hands,4
+SUS-5e6f69,Jewelry shop heist → Cross-border smuggling,Pistol → Bare Hands,3
+SUS-5e6f69,Jewelry shop heist → Bank locker break-in,Pistol → Bare Hands,2
+SUS-1ca942,Honor killing → Contract killing,Rope → Bare Hands,2
+SUS-1ca942,Honor killing → Acid attack murder,Rope → Acid,2
+SUS-1fc3f6,UPI QR scam → Fake job phishing,Mobile → Bare Hands,3
+SUS-1fc3f6,UPI QR scam → Fake job phishing,Mobile → Bare Hands,5
+SUS-1fc3f6,UPI QR scam → Identity theft,Mobile → Bare Hands,2
+SUS-617a36,Loan app blackmail → Family extortion,Laptop → Bare Hands,4
+SUS-91ffdc,UPI QR scam → Identity theft,Mobile → Bare Hands,5
+SUS-91ffdc,UPI QR scam → Identity theft,Mobile → Bare Hands,4
+SUS-91ffdc,UPI QR scam → Fake job phishing,Mobile → Bare Hands,4
+SUS-54211a,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,4
+SUS-54211a,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,3
+SUS-54211a,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,2
+SUS-de474e,Sand mafia killing → Fake encounter killing,Country-made Gun → Country-made Gun,5
+SUS-de474e,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,5
+SUS-92cc83,UPI QR scam → Identity theft,Mobile → Bare Hands,3
+SUS-92cc83,UPI QR scam → Identity theft,Mobile → Bare Hands,3
+SUS-92cc83,UPI QR scam → Bank account takeover,Mobile → Bare Hands,2
+SUS-7b6b52,Fake encounter killing → Sand mafia killing,Pistol → Axe,2
+SUS-7b6b52,Fake encounter killing → Document forgery,Pistol → Bare Hands,5
+SUS-7b6b52,Fake encounter killing → Document forgery,Pistol → Bare Hands,3
+SUS-0dad85,ATM gas cutter robbery → Temple hundi theft,Gas Cutter → Bare Hands,3
+SUS-0dad85,ATM gas cutter robbery → Highway truck hijack,Gas Cutter → Bare Hands,3
+SUS-c7c487,Black magic sacrifice → Organ trafficking,Knife → Bare Hands,3
+SUS-c7c487,Black magic sacrifice → Child labor racket,Knife → Bare Hands,3
+SUS-7217ba,Loan app blackmail → Sextortion,Laptop → Bare Hands,2
+SUS-843185,UPI QR scam → Bank account takeover,Mobile → Bare Hands,4
+SUS-843185,UPI QR scam → Identity theft,Mobile → Bare Hands,5
+SUS-b2dec7,Black magic sacrifice → Fake encounter killing,Knife → Pistol,4
+SUS-b2dec7,Black magic sacrifice → Child labor racket,Knife → Bare Hands,3
+SUS-b2dec7,Black magic sacrifice → Fake encounter killing,Knife → Country-made Gun,5
+SUS-354b59,UPI QR scam → Identity theft,Mobile → Bare Hands,3
+SUS-354b59,UPI QR scam → Fake job phishing,Mobile → Bare Hands,2
+SUS-dddf9b,UPI QR scam → Bank account takeover,Mobile → Bare Hands,2
+SUS-dddf9b,UPI QR scam → Bank account takeover,Mobile → Bare Hands,4
+SUS-dddf9b,UPI QR scam → Identity theft,Mobile → Bare Hands,4
+SUS-2284db,Fake encounter killing → Witness elimination,Country-made Gun → Bare Hands,4
+SUS-4dd620,UPI QR scam → Bank account takeover,Mobile → Bare Hands,2
+SUS-04c2c0,Jewelry shop heist → Money laundering,Pistol → Bare Hands,3
+SUS-04c2c0,Jewelry shop heist → Money laundering,Pistol → Bare Hands,3
+SUS-04c2c0,Jewelry shop heist → Bank locker break-in,Pistol → Bare Hands,3
+SUS-849967,Land-related murder → Gang execution,Machete → Bare Hands,4
+SUS-09be29,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,4
+SUS-09be29,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,5
+SUS-e8197f,Sand mafia killing → Document forgery,Axe → Bare Hands,2
+SUS-e8197f,Sand mafia killing → Fake encounter killing,Axe → Pistol,2
+SUS-e8197f,Sand mafia killing → Document forgery,Axe → Bare Hands,5
+SUS-a2faac,UPI QR scam → Fake job phishing,Mobile → Bare Hands,2
+SUS-e6f777,ATM gas cutter robbery → Home invasion robbery,Iron Pipe → Bare Hands,4
+SUS-e6f777,ATM gas cutter robbery → Temple hundi theft,Iron Pipe → Bare Hands,2
+SUS-57d5bc,UPI QR scam → Fake job phishing,Mobile → Bare Hands,3
+SUS-57d5bc,UPI QR scam → Identity theft,Mobile → Bare Hands,2
+SUS-57d5bc,UPI QR scam → Fake job phishing,Mobile → Bare Hands,5
+SUS-e1bae4,Black magic sacrifice → Organ trafficking,Rope → Bare Hands,3
+SUS-e1bae4,Black magic sacrifice → Organ trafficking,Rope → Bare Hands,2
+SUS-387442,Sand mafia killing → Witness elimination,Axe → Bare Hands,5
+SUS-387442,Sand mafia killing → Fake encounter killing,Axe → Pistol,2
+SUS-0288c8,Sand mafia killing → Document forgery,Axe → Bare Hands,2
+SUS-0288c8,Sand mafia killing → Fake encounter killing,Axe → Pistol,4
+SUS-0288c8,Sand mafia killing → Witness elimination,Axe → Bare Hands,4
+SUS-f2a07f,Jewelry shop heist → Cross-border smuggling,Crowbar → Bare Hands,5
+SUS-f2a07f,Jewelry shop heist → Money laundering,Crowbar → Bare Hands,5
+SUS-f2a07f,Jewelry shop heist → Money laundering,Crowbar → Bare Hands,4
+SUS-ab251e,Honor killing → Acid attack murder,Knife → Acid,5
+SUS-ab251e,Honor killing → Contract killing,Knife → Bare Hands,5
+SUS-ab251e,Honor killing → Contract killing,Knife → Bare Hands,3
+SUS-6b9bdc,Black magic sacrifice → Fake encounter killing,Rope → Country-made Gun,5
+SUS-138ae4,Black magic sacrifice → Child labor racket,Rope → Bare Hands,5
+SUS-138ae4,Black magic sacrifice → Child labor racket,Rope → Bare Hands,4
+SUS-2abc79,Honor killing → Contract killing,Poison → Bare Hands,4
+SUS-b6e005,UPI QR scam → Fake job phishing,Mobile → Bare Hands,3
+SUS-b6e005,UPI QR scam → Identity theft,Mobile → Bare Hands,4
+SUS-b6e005,UPI QR scam → Fake job phishing,Mobile → Bare Hands,4
+SUS-1740c2,ATM gas cutter robbery → Home invasion robbery,Iron Pipe → Bare Hands,2
+SUS-1740c2,ATM gas cutter robbery → Home invasion robbery,Iron Pipe → Bare Hands,2
+SUS-518c4a,ATM gas cutter robbery → Highway truck hijack,Iron Pipe → Bare Hands,5
+SUS-518c4a,ATM gas cutter robbery → Home invasion robbery,Iron Pipe → Bare Hands,4
+SUS-518c4a,ATM gas cutter robbery → Home invasion robbery,Iron Pipe → Bare Hands,3
+SUS-8b0d2a,Jewelry shop heist → Cross-border smuggling,Crowbar → Bare Hands,2
+SUS-59b9fa,ATM gas cutter robbery → Highway truck hijack,Gas Cutter → Bare Hands,2
+SUS-59b9fa,ATM gas cutter robbery → Temple hundi theft,Gas Cutter → Bare Hands,4
+SUS-743dbb,Black magic sacrifice → Fake encounter killing,Rope → Pistol,5
+SUS-743dbb,Black magic sacrifice → Fake encounter killing,Rope → Country-made Gun,5
+SUS-573e6a,Sand mafia killing → Fake encounter killing,Country-made Gun → Country-made Gun,3
+SUS-573e6a,Sand mafia killing → Witness elimination,Country-made Gun → Bare Hands,4
+SUS-573e6a,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,5
+SUS-839ca2,Fake encounter killing → Sand mafia killing,Country-made Gun → Axe,4
+SUS-839ca2,Fake encounter killing → Sand mafia killing,Country-made Gun → Country-made Gun,3
+SUS-839ca2,Fake encounter killing → Sand mafia killing,Country-made Gun → Country-made Gun,3
+SUS-2afdd5,UPI QR scam → Fake job phishing,Mobile → Bare Hands,3
+SUS-2afdd5,UPI QR scam → Bank account takeover,Mobile → Bare Hands,4
+SUS-2afdd5,UPI QR scam → Fake job phishing,Mobile → Bare Hands,4
+SUS-db5e81,Black magic sacrifice → Child labor racket,Knife → Bare Hands,5
+SUS-db5e81,Black magic sacrifice → Organ trafficking,Knife → Bare Hands,3
+SUS-db5e81,Black magic sacrifice → Child labor racket,Knife → Bare Hands,3
+SUS-26e52f,Honor killing → Acid attack murder,Rope → Acid,2
+SUS-26e52f,Honor killing → Contract killing,Rope → Bare Hands,4
+SUS-49d735,UPI QR scam → Fake job phishing,Mobile → Bare Hands,3
+SUS-ada3ea,ATM gas cutter robbery → Highway truck hijack,Iron Pipe → Bare Hands,5
+SUS-7c6fac,Honor killing → Dowry death,Poison → Bare Hands,4
+SUS-7c6fac,Honor killing → Dowry death,Poison → Bare Hands,4
+SUS-821aaa,ATM gas cutter robbery → Highway truck hijack,Gas Cutter → Bare Hands,2
+SUS-821aaa,ATM gas cutter robbery → Temple hundi theft,Gas Cutter → Bare Hands,3
+SUS-821aaa,ATM gas cutter robbery → Home invasion robbery,Gas Cutter → Bare Hands,3
+SUS-22ac73,Sand mafia killing → Fake encounter killing,Country-made Gun → Country-made Gun,4
+SUS-842755,Jewelry shop heist → Money laundering,Hammer → Bare Hands,3
+SUS-842755,Jewelry shop heist → Bank locker break-in,Hammer → Bare Hands,2
+SUS-842755,Jewelry shop heist → Cross-border smuggling,Hammer → Bare Hands,2
+SUS-a0d5be,Loan app blackmail → Sextortion,Laptop → Bare Hands,3
+SUS-8ce017,UPI QR scam → Fake job phishing,Mobile → Bare Hands,2
+SUS-8ce017,UPI QR scam → Identity theft,Mobile → Bare Hands,3
+SUS-8ce017,UPI QR scam → Identity theft,Mobile → Bare Hands,5
+SUS-51f30b,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,4
+SUS-51f30b,Loan app blackmail → Family extortion,Laptop → Bare Hands,3
+SUS-51f30b,Loan app blackmail → Family extortion,Laptop → Bare Hands,5
+SUS-059030,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,3
+SUS-059030,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,2
+SUS-059030,Sand mafia killing → Witness elimination,Country-made Gun → Bare Hands,4
+SUS-6c694c,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,4
+SUS-6c694c,Loan app blackmail → Family extortion,Laptop → Bare Hands,3
+SUS-6c694c,Loan app blackmail → Family extortion,Laptop → Bare Hands,2
+SUS-9e64bd,ATM gas cutter robbery → Temple hundi theft,Gas Cutter → Bare Hands,3
+SUS-3e75b8,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,4
+SUS-3e75b8,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,3
+SUS-3e75b8,Sand mafia killing → Fake encounter killing,Country-made Gun → Country-made Gun,5
+SUS-a7fbfc,Black magic sacrifice → Child labor racket,Rope → Bare Hands,3
+SUS-24154a,UPI QR scam → Identity theft,Mobile → Bare Hands,4
+SUS-24154a,UPI QR scam → Bank account takeover,Mobile → Bare Hands,5
+SUS-e2f37c,Land-related murder → Gang execution,Machete → Bare Hands,3
+SUS-e2f37c,Land-related murder → Honor killing,Machete → Poison,4
+SUS-138744,Fake encounter killing → Document forgery,Pistol → Bare Hands,2
+SUS-2b85f6,UPI QR scam → Identity theft,Mobile → Bare Hands,4
+SUS-fdded6,UPI QR scam → Bank account takeover,Mobile → Bare Hands,2
+SUS-fdded6,UPI QR scam → Identity theft,Mobile → Bare Hands,5
+SUS-2331c1,Black magic sacrifice → Organ trafficking,Rope → Bare Hands,3
+SUS-fa06c3,ATM gas cutter robbery → Temple hundi theft,Gas Cutter → Bare Hands,2
+SUS-fa06c3,ATM gas cutter robbery → Temple hundi theft,Gas Cutter → Bare Hands,4
+SUS-fa06c3,ATM gas cutter robbery → Home invasion robbery,Gas Cutter → Bare Hands,5
+SUS-1413e1,Honor killing → Contract killing,Rope → Bare Hands,3
+SUS-1413e1,Honor killing → Acid attack murder,Rope → Acid,4
+SUS-1413e1,Honor killing → Acid attack murder,Rope → Acid,4
+SUS-3d1948,Loan app blackmail → Sextortion,Laptop → Bare Hands,5
+SUS-3d1948,Loan app blackmail → Sextortion,Laptop → Bare Hands,3
+SUS-01300e,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,3
+SUS-3f74f8,Loan app blackmail → Sextortion,Laptop → Bare Hands,3
+SUS-3f74f8,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,2
+SUS-e1d85e,Black magic sacrifice → Fake encounter killing,Rope → Country-made Gun,3
+SUS-e1d85e,Black magic sacrifice → Fake encounter killing,Rope → Pistol,5
+SUS-e1d85e,Black magic sacrifice → Child labor racket,Rope → Bare Hands,5
+SUS-f23ecd,UPI QR scam → Bank account takeover,Mobile → Bare Hands,4
+SUS-f23ecd,UPI QR scam → Identity theft,Mobile → Bare Hands,5
+SUS-ec6681,Land-related murder → Honor killing,Sickle → Rope,2
+SUS-b7f2b8,Land-related murder → Honor killing,Iron Rod → Rope,5
+SUS-b7f2b8,Land-related murder → Gang execution,Iron Rod → Bare Hands,3
+SUS-b7f2b8,Land-related murder → Honor killing,Iron Rod → Poison,2
+SUS-bf2333,Black magic sacrifice → Child labor racket,Rope → Bare Hands,5
+SUS-bf2333,Black magic sacrifice → Organ trafficking,Rope → Bare Hands,2
+SUS-bf2333,Black magic sacrifice → Child labor racket,Rope → Bare Hands,2
+SUS-1cc424,Loan app blackmail → Family extortion,Laptop → Bare Hands,5
+SUS-de6ce1,Honor killing → Acid attack murder,Poison → Acid,5
+SUS-de6ce1,Honor killing → Contract killing,Poison → Bare Hands,4
+SUS-de6ce1,Honor killing → Acid attack murder,Poison → Acid,2
+SUS-6a934e,Sand mafia killing → Fake encounter killing,Axe → Country-made Gun,2
+SUS-3c70fc,Fake encounter killing → Witness elimination,Country-made Gun → Bare Hands,4
+SUS-3c70fc,Fake encounter killing → Witness elimination,Country-made Gun → Bare Hands,2
+SUS-3c70fc,Fake encounter killing → Document forgery,Country-made Gun → Bare Hands,3
+SUS-8883e0,Jewelry shop heist → Cross-border smuggling,Crowbar → Bare Hands,3
+SUS-8883e0,Jewelry shop heist → Bank locker break-in,Crowbar → Bare Hands,5
+SUS-8883e0,Jewelry shop heist → Money laundering,Crowbar → Bare Hands,4
+SUS-f57869,Black magic sacrifice → Organ trafficking,Knife → Bare Hands,4
+SUS-f57869,Black magic sacrifice → Fake encounter killing,Knife → Country-made Gun,2
+SUS-f57869,Black magic sacrifice → Organ trafficking,Knife → Bare Hands,2
+SUS-76b065,UPI QR scam → Bank account takeover,Mobile → Bare Hands,5
+SUS-f37adc,UPI QR scam → Identity theft,Mobile → Bare Hands,4
+SUS-7890c6,UPI QR scam → Fake job phishing,Mobile → Bare Hands,3
+SUS-7890c6,UPI QR scam → Fake job phishing,Mobile → Bare Hands,5
+SUS-e18c7d,Land-related murder → Gang execution,Iron Rod → Bare Hands,4
+SUS-e18c7d,Land-related murder → Gang execution,Iron Rod → Bare Hands,5
+SUS-0a3bb2,UPI QR scam → Bank account takeover,Mobile → Bare Hands,5
+SUS-d7e223,UPI QR scam → Identity theft,Mobile → Bare Hands,4
+SUS-d7e223,UPI QR scam → Identity theft,Mobile → Bare Hands,4
+SUS-d7e223,UPI QR scam → Identity theft,Mobile → Bare Hands,5
+SUS-7e2721,Jewelry shop heist → Money laundering,Pistol → Bare Hands,4
+SUS-7e2721,Jewelry shop heist → Bank locker break-in,Pistol → Bare Hands,2
+SUS-7e2721,Jewelry shop heist → Cross-border smuggling,Pistol → Bare Hands,4
+SUS-8aafea,Loan app blackmail → Family extortion,Laptop → Bare Hands,3
+SUS-8aafea,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,5
+SUS-b7826a,Jewelry shop heist → Cross-border smuggling,Crowbar → Bare Hands,4
+SUS-b7826a,Jewelry shop heist → Cross-border smuggling,Crowbar → Bare Hands,3
+SUS-b42405,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,5
+SUS-cb4690,Jewelry shop heist → Money laundering,Crowbar → Bare Hands,5
+SUS-14de8f,Jewelry shop heist → Bank locker break-in,Pistol → Bare Hands,4
+SUS-220497,Loan app blackmail → Family extortion,Laptop → Bare Hands,3
+SUS-220497,Loan app blackmail → Family extortion,Laptop → Bare Hands,2
+SUS-220497,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,5
+SUS-c6484d,Jewelry shop heist → Cross-border smuggling,Hammer → Bare Hands,5
+SUS-a09c66,ATM gas cutter robbery → Home invasion robbery,Iron Pipe → Bare Hands,4
+SUS-12706b,Loan app blackmail → Family extortion,Laptop → Bare Hands,5
+SUS-12706b,Loan app blackmail → Sextortion,Laptop → Bare Hands,3
+SUS-2d790b,Land-related murder → Revenge murder,Sickle → Bare Hands,4
+SUS-2d790b,Land-related murder → Honor killing,Sickle → Poison,2
+SUS-2d790b,Land-related murder → Honor killing,Sickle → Rope,2
+SUS-f0ae7d,Fake encounter killing → Document forgery,Country-made Gun → Bare Hands,2
+SUS-f0ae7d,Fake encounter killing → Sand mafia killing,Country-made Gun → Country-made Gun,3
+SUS-f0ae7d,Fake encounter killing → Document forgery,Country-made Gun → Bare Hands,4
+SUS-36ef51,Jewelry shop heist → Money laundering,Crowbar → Bare Hands,3
+SUS-aa49c0,Loan app blackmail → Family extortion,Laptop → Bare Hands,3
+SUS-aa49c0,Loan app blackmail → Family extortion,Laptop → Bare Hands,5
+SUS-aa49c0,Loan app blackmail → Family extortion,Laptop → Bare Hands,5
+SUS-ba7d55,Black magic sacrifice → Fake encounter killing,Knife → Country-made Gun,3
+SUS-75cce8,Sand mafia killing → Fake encounter killing,Axe → Pistol,2
+SUS-75cce8,Sand mafia killing → Document forgery,Axe → Bare Hands,4
+SUS-75cce8,Sand mafia killing → Witness elimination,Axe → Bare Hands,4
+SUS-31146f,Black magic sacrifice → Fake encounter killing,Knife → Pistol,4
+SUS-31146f,Black magic sacrifice → Fake encounter killing,Knife → Country-made Gun,5
+SUS-31146f,Black magic sacrifice → Fake encounter killing,Knife → Country-made Gun,5
+SUS-ce949c,Black magic sacrifice → Organ trafficking,Knife → Bare Hands,3
+SUS-ce949c,Black magic sacrifice → Fake encounter killing,Knife → Country-made Gun,3
+SUS-b8cb92,ATM gas cutter robbery → Highway truck hijack,Gas Cutter → Bare Hands,2
+SUS-b8cb92,ATM gas cutter robbery → Home invasion robbery,Gas Cutter → Bare Hands,5
+SUS-abe4c3,ATM gas cutter robbery → Home invasion robbery,Iron Pipe → Bare Hands,4
+SUS-abe4c3,ATM gas cutter robbery → Temple hundi theft,Iron Pipe → Bare Hands,4
+SUS-0e44fc,Loan app blackmail → Sextortion,Laptop → Bare Hands,3
+SUS-0b25ce,Land-related murder → Revenge murder,Machete → Bare Hands,4
+SUS-0b25ce,Land-related murder → Gang execution,Machete → Bare Hands,4
+SUS-60c92c,Black magic sacrifice → Organ trafficking,Rope → Bare Hands,4
+SUS-60c92c,Black magic sacrifice → Fake encounter killing,Rope → Pistol,5
+SUS-60c92c,Black magic sacrifice → Child labor racket,Rope → Bare Hands,2
+SUS-7b0ccc,Jewelry shop heist → Bank locker break-in,Hammer → Bare Hands,2
+SUS-7b0ccc,Jewelry shop heist → Bank locker break-in,Hammer → Bare Hands,5
+SUS-66451e,Honor killing → Acid attack murder,Poison → Acid,4
+SUS-66451e,Honor killing → Acid attack murder,Poison → Acid,3
+SUS-2cb537,Black magic sacrifice → Child labor racket,Rope → Bare Hands,5
+SUS-2dd94d,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,3
+SUS-c1a01a,Loan app blackmail → Sextortion,Laptop → Bare Hands,2
+SUS-c1a01a,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,3
+SUS-c1a01a,Loan app blackmail → Family extortion,Laptop → Bare Hands,5
+SUS-c13e74,Land-related murder → Gang execution,Sickle → Bare Hands,5
+SUS-c13e74,Land-related murder → Revenge murder,Sickle → Bare Hands,5
+SUS-5f2f33,Fake encounter killing → Sand mafia killing,Pistol → Country-made Gun,2
+SUS-5f2f33,Fake encounter killing → Sand mafia killing,Pistol → Axe,2
+SUS-5f2f33,Fake encounter killing → Document forgery,Pistol → Bare Hands,4
+SUS-e5c8d6,Honor killing → Acid attack murder,Rope → Acid,2
+SUS-e5c8d6,Honor killing → Contract killing,Rope → Bare Hands,3
+SUS-52a122,Sand mafia killing → Document forgery,Axe → Bare Hands,4
+SUS-52a122,Sand mafia killing → Document forgery,Axe → Bare Hands,5
+SUS-52a122,Sand mafia killing → Document forgery,Axe → Bare Hands,3
+SUS-3959b5,Land-related murder → Gang execution,Machete → Bare Hands,2
+SUS-3959b5,Land-related murder → Revenge murder,Machete → Bare Hands,2
+SUS-2a7133,Jewelry shop heist → Cross-border smuggling,Pistol → Bare Hands,4
+SUS-2a7133,Jewelry shop heist → Money laundering,Pistol → Bare Hands,4
+SUS-b5f2ee,UPI QR scam → Identity theft,Mobile → Bare Hands,3
+SUS-b5f2ee,UPI QR scam → Fake job phishing,Mobile → Bare Hands,5
+SUS-8a299e,Sand mafia killing → Fake encounter killing,Country-made Gun → Pistol,5
+SUS-8a299e,Sand mafia killing → Fake encounter killing,Country-made Gun → Pistol,2
+SUS-b7b12a,Fake encounter killing → Sand mafia killing,Pistol → Axe,5
+SUS-b7b12a,Fake encounter killing → Witness elimination,Pistol → Bare Hands,2
+SUS-b7b12a,Fake encounter killing → Document forgery,Pistol → Bare Hands,5
+SUS-c32bbd,Jewelry shop heist → Money laundering,Crowbar → Bare Hands,4
+SUS-c32bbd,Jewelry shop heist → Money laundering,Crowbar → Bare Hands,2
+SUS-c32bbd,Jewelry shop heist → Money laundering,Crowbar → Bare Hands,3
+SUS-3eb2dd,Loan app blackmail → Sextortion,Laptop → Bare Hands,2
+SUS-2546d0,Jewelry shop heist → Cross-border smuggling,Hammer → Bare Hands,3
+SUS-2546d0,Jewelry shop heist → Bank locker break-in,Hammer → Bare Hands,2
+SUS-2546d0,Jewelry shop heist → Bank locker break-in,Hammer → Bare Hands,5
+SUS-68b5e2,Jewelry shop heist → Bank locker break-in,Pistol → Bare Hands,3
+SUS-5b1ffe,UPI QR scam → Fake job phishing,Mobile → Bare Hands,3
+SUS-5b1ffe,UPI QR scam → Bank account takeover,Mobile → Bare Hands,3
+SUS-5b1ffe,UPI QR scam → Fake job phishing,Mobile → Bare Hands,5
+SUS-a97d13,Honor killing → Acid attack murder,Poison → Acid,2
+SUS-075e9e,UPI QR scam → Fake job phishing,Mobile → Bare Hands,5
+SUS-075e9e,UPI QR scam → Fake job phishing,Mobile → Bare Hands,3
+SUS-2499c2,UPI QR scam → Fake job phishing,Mobile → Bare Hands,4
+SUS-2499c2,UPI QR scam → Fake job phishing,Mobile → Bare Hands,4
+SUS-871cff,Jewelry shop heist → Cross-border smuggling,Crowbar → Bare Hands,4
+SUS-871cff,Jewelry shop heist → Bank locker break-in,Crowbar → Bare Hands,3
+SUS-871cff,Jewelry shop heist → Cross-border smuggling,Crowbar → Bare Hands,4
+SUS-b956af,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,2
+SUS-b956af,Loan app blackmail → Family extortion,Laptop → Bare Hands,2
+SUS-b956af,Loan app blackmail → Family extortion,Laptop → Bare Hands,5
+SUS-36ec9c,UPI QR scam → Identity theft,Mobile → Bare Hands,2
+SUS-23822a,Sand mafia killing → Witness elimination,Country-made Gun → Bare Hands,2
+SUS-23822a,Sand mafia killing → Witness elimination,Country-made Gun → Bare Hands,4
+SUS-aed7e9,Fake encounter killing → Sand mafia killing,Country-made Gun → Country-made Gun,2
+SUS-aed7e9,Fake encounter killing → Sand mafia killing,Country-made Gun → Country-made Gun,4
+SUS-aed7e9,Fake encounter killing → Witness elimination,Country-made Gun → Bare Hands,5
+SUS-6e05e1,Black magic sacrifice → Organ trafficking,Rope → Bare Hands,2
+SUS-b6272e,Land-related murder → Gang execution,Sickle → Bare Hands,3
+SUS-b6272e,Land-related murder → Honor killing,Sickle → Knife,2
+SUS-5701aa,UPI QR scam → Fake job phishing,Mobile → Bare Hands,3
+SUS-5701aa,UPI QR scam → Fake job phishing,Mobile → Bare Hands,5
+SUS-0613a8,Loan app blackmail → Family extortion,Laptop → Bare Hands,4
+SUS-0613a8,Loan app blackmail → Sextortion,Laptop → Bare Hands,3
+SUS-249b18,Loan app blackmail → Family extortion,Laptop → Bare Hands,5
+SUS-249b18,Loan app blackmail → Family extortion,Laptop → Bare Hands,3
+SUS-5eed42,Jewelry shop heist → Bank locker break-in,Hammer → Bare Hands,4
+SUS-5eed42,Jewelry shop heist → Cross-border smuggling,Hammer → Bare Hands,4
+SUS-5eed42,Jewelry shop heist → Cross-border smuggling,Hammer → Bare Hands,5
+SUS-162f75,Jewelry shop heist → Bank locker break-in,Hammer → Bare Hands,3
+SUS-162f75,Jewelry shop heist → Bank locker break-in,Hammer → Bare Hands,5
+SUS-987584,ATM gas cutter robbery → Temple hundi theft,Iron Pipe → Bare Hands,3
+SUS-987584,ATM gas cutter robbery → Temple hundi theft,Iron Pipe → Bare Hands,3
+SUS-987584,ATM gas cutter robbery → Highway truck hijack,Iron Pipe → Bare Hands,4
+SUS-9c26dc,Fake encounter killing → Document forgery,Country-made Gun → Bare Hands,2
+SUS-868e85,Jewelry shop heist → Cross-border smuggling,Hammer → Bare Hands,4
+SUS-4c679d,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,3
+SUS-402349,Jewelry shop heist → Cross-border smuggling,Hammer → Bare Hands,5
+SUS-68840f,Loan app blackmail → Sextortion,Laptop → Bare Hands,2
+SUS-96e104,Jewelry shop heist → Bank locker break-in,Crowbar → Bare Hands,3
+SUS-96e104,Jewelry shop heist → Cross-border smuggling,Crowbar → Bare Hands,3
+SUS-96e104,Jewelry shop heist → Bank locker break-in,Crowbar → Bare Hands,5
+SUS-a4744d,Sand mafia killing → Fake encounter killing,Axe → Country-made Gun,5
+SUS-a4744d,Sand mafia killing → Witness elimination,Axe → Bare Hands,4
+SUS-a4744d,Sand mafia killing → Fake encounter killing,Axe → Pistol,5
+SUS-e020ef,Honor killing → Contract killing,Poison → Bare Hands,2
+SUS-e020ef,Honor killing → Acid attack murder,Poison → Acid,2
+SUS-b8a88d,Fake encounter killing → Document forgery,Pistol → Bare Hands,3
+SUS-b8a88d,Fake encounter killing → Witness elimination,Pistol → Bare Hands,4
+SUS-e9b148,Honor killing → Acid attack murder,Poison → Acid,4
+SUS-681de0,Sand mafia killing → Document forgery,Axe → Bare Hands,3
+SUS-681de0,Sand mafia killing → Witness elimination,Axe → Bare Hands,2
+SUS-681de0,Sand mafia killing → Fake encounter killing,Axe → Pistol,3
+SUS-c9199b,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,3
+SUS-c9199b,Sand mafia killing → Fake encounter killing,Country-made Gun → Country-made Gun,3
+SUS-1a9de0,UPI QR scam → Fake job phishing,Mobile → Bare Hands,5
+SUS-1a9de0,UPI QR scam → Fake job phishing,Mobile → Bare Hands,5
+SUS-53d2ce,Sand mafia killing → Witness elimination,Axe → Bare Hands,2
+SUS-53d2ce,Sand mafia killing → Fake encounter killing,Axe → Pistol,2
+SUS-0d8db0,Jewelry shop heist → Money laundering,Pistol → Bare Hands,2
+SUS-0d8db0,Jewelry shop heist → Money laundering,Pistol → Bare Hands,5
+SUS-2a7c99,Fake encounter killing → Document forgery,Pistol → Bare Hands,3
+SUS-2a7c99,Fake encounter killing → Sand mafia killing,Pistol → Axe,4
+SUS-2a7c99,Fake encounter killing → Witness elimination,Pistol → Bare Hands,2
+SUS-2fd2da,Honor killing → Acid attack murder,Poison → Acid,4
+SUS-2fd2da,Honor killing → Acid attack murder,Poison → Acid,2
+SUS-2fd2da,Honor killing → Contract killing,Poison → Bare Hands,5
+SUS-83fe17,UPI QR scam → Identity theft,Mobile → Bare Hands,4
+SUS-433ea1,Sand mafia killing → Witness elimination,Axe → Bare Hands,5
+SUS-433ea1,Sand mafia killing → Witness elimination,Axe → Bare Hands,5
+SUS-433ea1,Sand mafia killing → Document forgery,Axe → Bare Hands,2
+SUS-9f9dc3,Black magic sacrifice → Organ trafficking,Rope → Bare Hands,3
+SUS-9f9dc3,Black magic sacrifice → Fake encounter killing,Rope → Pistol,5
+SUS-9f9dc3,Black magic sacrifice → Organ trafficking,Rope → Bare Hands,2
+SUS-e04e95,Black magic sacrifice → Organ trafficking,Rope → Bare Hands,3
+SUS-4e43bd,ATM gas cutter robbery → Highway truck hijack,Iron Pipe → Bare Hands,2
+SUS-4aac52,UPI QR scam → Fake job phishing,Mobile → Bare Hands,4
+SUS-4aac52,UPI QR scam → Identity theft,Mobile → Bare Hands,2
+SUS-55ab45,Fake encounter killing → Witness elimination,Country-made Gun → Bare Hands,4
+SUS-55ab45,Fake encounter killing → Witness elimination,Country-made Gun → Bare Hands,5
+SUS-55ab45,Fake encounter killing → Sand mafia killing,Country-made Gun → Country-made Gun,4
+SUS-1dd7dc,Loan app blackmail → Family extortion,Laptop → Bare Hands,2
+SUS-0f9f95,Loan app blackmail → Family extortion,Laptop → Bare Hands,5
+SUS-aa1af2,UPI QR scam → Identity theft,Mobile → Bare Hands,4
+SUS-aa1af2,UPI QR scam → Fake job phishing,Mobile → Bare Hands,4
+SUS-aa1af2,UPI QR scam → Identity theft,Mobile → Bare Hands,4
+SUS-a36fa5,ATM gas cutter robbery → Temple hundi theft,Iron Pipe → Bare Hands,5
+SUS-a36fa5,ATM gas cutter robbery → Home invasion robbery,Iron Pipe → Bare Hands,3
+SUS-8a0924,Jewelry shop heist → Money laundering,Hammer → Bare Hands,2
+SUS-8a0924,Jewelry shop heist → Money laundering,Hammer → Bare Hands,3
+SUS-8a0924,Jewelry shop heist → Money laundering,Hammer → Bare Hands,5
+SUS-ca8a22,Honor killing → Contract killing,Poison → Bare Hands,5
+SUS-717068,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,5
+SUS-da7dce,Sand mafia killing → Fake encounter killing,Country-made Gun → Country-made Gun,5
+SUS-da7dce,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,2
+SUS-da7dce,Sand mafia killing → Witness elimination,Country-made Gun → Bare Hands,5
+SUS-1850d8,Fake encounter killing → Document forgery,Pistol → Bare Hands,3
+SUS-1850d8,Fake encounter killing → Document forgery,Pistol → Bare Hands,4
+SUS-024af2,Jewelry shop heist → Bank locker break-in,Crowbar → Bare Hands,2
+SUS-024af2,Jewelry shop heist → Cross-border smuggling,Crowbar → Bare Hands,3
+SUS-b2ab5b,Black magic sacrifice → Child labor racket,Rope → Bare Hands,3
+SUS-b2ab5b,Black magic sacrifice → Organ trafficking,Rope → Bare Hands,5
+SUS-eca54d,ATM gas cutter robbery → Temple hundi theft,Gas Cutter → Bare Hands,2
+SUS-eca54d,ATM gas cutter robbery → Highway truck hijack,Gas Cutter → Bare Hands,5
+SUS-eca54d,ATM gas cutter robbery → Highway truck hijack,Gas Cutter → Bare Hands,2
+SUS-4d8309,Jewelry shop heist → Bank locker break-in,Pistol → Bare Hands,2
+SUS-4d8309,Jewelry shop heist → Bank locker break-in,Pistol → Bare Hands,2
+SUS-4d8309,Jewelry shop heist → Bank locker break-in,Pistol → Bare Hands,5
+SUS-f374c2,Fake encounter killing → Document forgery,Pistol → Bare Hands,5
+SUS-b87498,Fake encounter killing → Witness elimination,Pistol → Bare Hands,3
+SUS-b87498,Fake encounter killing → Document forgery,Pistol → Bare Hands,3
+SUS-e31474,Jewelry shop heist → Cross-border smuggling,Hammer → Bare Hands,3
+SUS-5f4c68,Land-related murder → Honor killing,Sickle → Rope,3
+SUS-5f4c68,Land-related murder → Honor killing,Sickle → Poison,4
+SUS-1c8783,Fake encounter killing → Sand mafia killing,Country-made Gun → Country-made Gun,4
+SUS-1c8783,Fake encounter killing → Document forgery,Country-made Gun → Bare Hands,3
+SUS-fff69f,UPI QR scam → Bank account takeover,Mobile → Bare Hands,5
+SUS-fff69f,UPI QR scam → Identity theft,Mobile → Bare Hands,5
+SUS-3d8a1b,Loan app blackmail → Family extortion,Laptop → Bare Hands,2
+SUS-3d8a1b,Loan app blackmail → Family extortion,Laptop → Bare Hands,3
+SUS-3d8a1b,Loan app blackmail → Family extortion,Laptop → Bare Hands,3
+SUS-aa8de1,Black magic sacrifice → Fake encounter killing,Rope → Pistol,3
+SUS-2f731e,Loan app blackmail → Sextortion,Laptop → Bare Hands,2
+SUS-2f731e,Loan app blackmail → Family extortion,Laptop → Bare Hands,4
+SUS-2f731e,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,3
+SUS-861d66,ATM gas cutter robbery → Home invasion robbery,Iron Pipe → Bare Hands,4
+SUS-6e0c21,Black magic sacrifice → Organ trafficking,Rope → Bare Hands,4
+SUS-6e0c21,Black magic sacrifice → Child labor racket,Rope → Bare Hands,3
+SUS-6e0c21,Black magic sacrifice → Organ trafficking,Rope → Bare Hands,4
+SUS-eb7e10,Land-related murder → Revenge murder,Iron Rod → Bare Hands,4
+SUS-eb7e10,Land-related murder → Gang execution,Iron Rod → Bare Hands,4
+SUS-eb7e10,Land-related murder → Honor killing,Iron Rod → Poison,2
+SUS-48d33e,Sand mafia killing → Witness elimination,Axe → Bare Hands,3
+SUS-48d33e,Sand mafia killing → Document forgery,Axe → Bare Hands,3
+SUS-48d33e,Sand mafia killing → Document forgery,Axe → Bare Hands,2
+SUS-47c6a9,Honor killing → Acid attack murder,Knife → Acid,4
+SUS-47c6a9,Honor killing → Acid attack murder,Knife → Acid,5
+SUS-47c6a9,Honor killing → Dowry death,Knife → Bare Hands,2
+SUS-19566a,Land-related murder → Honor killing,Sickle → Knife,4
+SUS-85f665,UPI QR scam → Fake job phishing,Mobile → Bare Hands,5
+SUS-3a8ccf,Jewelry shop heist → Money laundering,Crowbar → Bare Hands,4
+SUS-3a8ccf,Jewelry shop heist → Cross-border smuggling,Crowbar → Bare Hands,2
+SUS-f937c0,Honor killing → Acid attack murder,Knife → Acid,4
+SUS-129eac,Sand mafia killing → Witness elimination,Axe → Bare Hands,2
+SUS-129eac,Sand mafia killing → Document forgery,Axe → Bare Hands,4
+SUS-6ba5e7,Loan app blackmail → Family extortion,Laptop → Bare Hands,4
+SUS-6ba5e7,Loan app blackmail → Family extortion,Laptop → Bare Hands,3
+SUS-ef53d0,Loan app blackmail → Sextortion,Laptop → Bare Hands,3
+SUS-f20a03,UPI QR scam → Bank account takeover,Mobile → Bare Hands,5
+SUS-f20a03,UPI QR scam → Identity theft,Mobile → Bare Hands,3
+SUS-f20a03,UPI QR scam → Bank account takeover,Mobile → Bare Hands,3
+SUS-760fc8,Honor killing → Acid attack murder,Knife → Acid,2
+SUS-760fc8,Honor killing → Acid attack murder,Knife → Acid,5
+SUS-760fc8,Honor killing → Acid attack murder,Knife → Acid,2
+SUS-efd7e0,Sand mafia killing → Fake encounter killing,Axe → Pistol,2
+SUS-efd7e0,Sand mafia killing → Witness elimination,Axe → Bare Hands,4
+SUS-2c0041,Sand mafia killing → Witness elimination,Country-made Gun → Bare Hands,3
+SUS-2c0041,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,5
+SUS-2c0041,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,2
+SUS-2b9f35,Honor killing → Dowry death,Knife → Bare Hands,5
+SUS-2b9f35,Honor killing → Dowry death,Knife → Bare Hands,5
+SUS-669482,Loan app blackmail → Family extortion,Laptop → Bare Hands,3
+SUS-669482,Loan app blackmail → Sextortion,Laptop → Bare Hands,2
+SUS-669482,Loan app blackmail → Sextortion,Laptop → Bare Hands,3
+SUS-5bb86e,Sand mafia killing → Fake encounter killing,Axe → Pistol,2
+SUS-f09533,Fake encounter killing → Sand mafia killing,Country-made Gun → Axe,4
+SUS-f09533,Fake encounter killing → Sand mafia killing,Country-made Gun → Country-made Gun,3
+SUS-e0cf2a,Loan app blackmail → Family extortion,Laptop → Bare Hands,5
+SUS-e0cf2a,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,5
+SUS-f22818,ATM gas cutter robbery → Temple hundi theft,Iron Pipe → Bare Hands,5
+SUS-af0f6f,Black magic sacrifice → Fake encounter killing,Rope → Country-made Gun,4
+SUS-be7d94,Honor killing → Contract killing,Poison → Bare Hands,4
+SUS-be7d94,Honor killing → Acid attack murder,Poison → Acid,2
+SUS-721f17,Fake encounter killing → Document forgery,Pistol → Bare Hands,2
+SUS-364d36,Black magic sacrifice → Fake encounter killing,Knife → Pistol,4
+SUS-364d36,Black magic sacrifice → Organ trafficking,Knife → Bare Hands,5
+SUS-667e99,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,2
+SUS-667e99,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,2
+SUS-667e99,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,4
+SUS-4ed2f1,ATM gas cutter robbery → Highway truck hijack,Gas Cutter → Bare Hands,4
+SUS-0edb9a,Loan app blackmail → Family extortion,Laptop → Bare Hands,5
+SUS-53b556,UPI QR scam → Bank account takeover,Mobile → Bare Hands,2
+SUS-24f2cd,Land-related murder → Revenge murder,Iron Rod → Bare Hands,5
+SUS-24f2cd,Land-related murder → Gang execution,Iron Rod → Bare Hands,4
+SUS-24f2cd,Land-related murder → Gang execution,Iron Rod → Bare Hands,3
+SUS-545912,Honor killing → Contract killing,Knife → Bare Hands,3
+SUS-f52244,Honor killing → Contract killing,Poison → Bare Hands,4
+SUS-f52244,Honor killing → Acid attack murder,Poison → Acid,5
+SUS-2a8bbf,Land-related murder → Honor killing,Machete → Poison,5
+SUS-c61608,Fake encounter killing → Sand mafia killing,Country-made Gun → Country-made Gun,4
+SUS-c61608,Fake encounter killing → Witness elimination,Country-made Gun → Bare Hands,5
+SUS-6d56e2,UPI QR scam → Identity theft,Mobile → Bare Hands,3
+SUS-cd805e,Black magic sacrifice → Child labor racket,Rope → Bare Hands,3
+SUS-4b727d,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,4
+SUS-4b727d,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,4
+SUS-e193a3,ATM gas cutter robbery → Home invasion robbery,Iron Pipe → Bare Hands,3
+SUS-1f6c78,Fake encounter killing → Witness elimination,Pistol → Bare Hands,4
+SUS-1f6c78,Fake encounter killing → Sand mafia killing,Pistol → Axe,5
+SUS-1f6c78,Fake encounter killing → Document forgery,Pistol → Bare Hands,3
+SUS-164db1,Sand mafia killing → Witness elimination,Axe → Bare Hands,4
+SUS-d49e9b,Jewelry shop heist → Cross-border smuggling,Crowbar → Bare Hands,3
+SUS-d49e9b,Jewelry shop heist → Money laundering,Crowbar → Bare Hands,3
+SUS-07d182,Sand mafia killing → Fake encounter killing,Country-made Gun → Country-made Gun,5
+SUS-07d182,Sand mafia killing → Witness elimination,Country-made Gun → Bare Hands,5
+SUS-955423,Jewelry shop heist → Bank locker break-in,Hammer → Bare Hands,5
+SUS-955423,Jewelry shop heist → Bank locker break-in,Hammer → Bare Hands,5
+SUS-955423,Jewelry shop heist → Bank locker break-in,Hammer → Bare Hands,2
+SUS-160dac,UPI QR scam → Bank account takeover,Mobile → Bare Hands,5
+SUS-b2b580,ATM gas cutter robbery → Highway truck hijack,Gas Cutter → Bare Hands,2
+SUS-b2b580,ATM gas cutter robbery → Temple hundi theft,Gas Cutter → Bare Hands,4
+SUS-c93da5,ATM gas cutter robbery → Highway truck hijack,Iron Pipe → Bare Hands,5
+SUS-c93da5,ATM gas cutter robbery → Home invasion robbery,Iron Pipe → Bare Hands,3
+SUS-c93da5,ATM gas cutter robbery → Highway truck hijack,Iron Pipe → Bare Hands,3
+SUS-4ba0d2,Loan app blackmail → Sextortion,Laptop → Bare Hands,3
+SUS-4ba0d2,Loan app blackmail → Sextortion,Laptop → Bare Hands,2
+SUS-134fb0,UPI QR scam → Identity theft,Mobile → Bare Hands,2
+SUS-887734,UPI QR scam → Bank account takeover,Mobile → Bare Hands,5
+SUS-887734,UPI QR scam → Bank account takeover,Mobile → Bare Hands,4
+SUS-887734,UPI QR scam → Identity theft,Mobile → Bare Hands,2
+SUS-10bf37,Black magic sacrifice → Organ trafficking,Rope → Bare Hands,4
+SUS-10bf37,Black magic sacrifice → Child labor racket,Rope → Bare Hands,5
+SUS-10bf37,Black magic sacrifice → Child labor racket,Rope → Bare Hands,5
+SUS-ccc424,ATM gas cutter robbery → Temple hundi theft,Gas Cutter → Bare Hands,3
+SUS-ccc424,ATM gas cutter robbery → Highway truck hijack,Gas Cutter → Bare Hands,3
+SUS-ccc424,ATM gas cutter robbery → Highway truck hijack,Gas Cutter → Bare Hands,2
+SUS-9c36d8,ATM gas cutter robbery → Temple hundi theft,Iron Pipe → Bare Hands,4
+SUS-9c36d8,ATM gas cutter robbery → Highway truck hijack,Iron Pipe → Bare Hands,5
+SUS-9c36d8,ATM gas cutter robbery → Temple hundi theft,Iron Pipe → Bare Hands,5
+SUS-f61f61,Fake encounter killing → Document forgery,Country-made Gun → Bare Hands,5
+SUS-f61f61,Fake encounter killing → Sand mafia killing,Country-made Gun → Axe,4
+SUS-5bdfa8,Fake encounter killing → Sand mafia killing,Pistol → Axe,2
+SUS-5bdfa8,Fake encounter killing → Witness elimination,Pistol → Bare Hands,4
+SUS-5bdfa8,Fake encounter killing → Document forgery,Pistol → Bare Hands,2
+SUS-826650,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,5
+SUS-826650,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,2
+SUS-826650,Loan app blackmail → Family extortion,Laptop → Bare Hands,4
+SUS-03d819,Loan app blackmail → Sextortion,Laptop → Bare Hands,2
+SUS-5d4f36,UPI QR scam → Identity theft,Mobile → Bare Hands,2
+SUS-f3672b,Land-related murder → Gang execution,Iron Rod → Bare Hands,2
+SUS-f3672b,Land-related murder → Gang execution,Iron Rod → Bare Hands,2
+SUS-0ecc95,Loan app blackmail → Sextortion,Laptop → Bare Hands,4
+SUS-c48c19,Black magic sacrifice → Organ trafficking,Rope → Bare Hands,4
+SUS-c48c19,Black magic sacrifice → Child labor racket,Rope → Bare Hands,4
+SUS-8a3863,Jewelry shop heist → Money laundering,Hammer → Bare Hands,4
+SUS-8a3863,Jewelry shop heist → Cross-border smuggling,Hammer → Bare Hands,3
+SUS-8a3863,Jewelry shop heist → Bank locker break-in,Hammer → Bare Hands,5
+SUS-1f7f95,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,5
+SUS-1f7f95,Loan app blackmail → Family extortion,Laptop → Bare Hands,4
+SUS-5c83ab,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,5
+SUS-3e2063,Loan app blackmail → Sextortion,Laptop → Bare Hands,2
+SUS-8ae56f,Jewelry shop heist → Bank locker break-in,Pistol → Bare Hands,5
+SUS-8ae56f,Jewelry shop heist → Money laundering,Pistol → Bare Hands,5
+SUS-8ae56f,Jewelry shop heist → Money laundering,Pistol → Bare Hands,4
+SUS-53e8ae,Sand mafia killing → Witness elimination,Axe → Bare Hands,5
+SUS-d30cee,ATM gas cutter robbery → Temple hundi theft,Gas Cutter → Bare Hands,4
+SUS-080973,Black magic sacrifice → Organ trafficking,Rope → Bare Hands,2
+SUS-91cc13,UPI QR scam → Identity theft,Mobile → Bare Hands,4
+SUS-91cc13,UPI QR scam → Bank account takeover,Mobile → Bare Hands,2
+SUS-187c08,ATM gas cutter robbery → Home invasion robbery,Gas Cutter → Bare Hands,3
+SUS-187c08,ATM gas cutter robbery → Highway truck hijack,Gas Cutter → Bare Hands,3
+SUS-187c08,ATM gas cutter robbery → Home invasion robbery,Gas Cutter → Bare Hands,3
+SUS-f67f87,Black magic sacrifice → Child labor racket,Rope → Bare Hands,2
+SUS-f67f87,Black magic sacrifice → Fake encounter killing,Rope → Country-made Gun,3
+SUS-f67f87,Black magic sacrifice → Fake encounter killing,Rope → Country-made Gun,3
+SUS-790f40,Honor killing → Dowry death,Rope → Bare Hands,4
+SUS-790f40,Honor killing → Contract killing,Rope → Bare Hands,5
+SUS-df7263,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,5
+SUS-df7263,Sand mafia killing → Witness elimination,Country-made Gun → Bare Hands,4
+SUS-a5ab0c,Black magic sacrifice → Organ trafficking,Rope → Bare Hands,4
+SUS-1ecb51,Loan app blackmail → Family extortion,Laptop → Bare Hands,4
+SUS-1ecb51,Loan app blackmail → Sextortion,Laptop → Bare Hands,2
+SUS-1ecb51,Loan app blackmail → Family extortion,Laptop → Bare Hands,3
+SUS-1ec013,Sand mafia killing → Witness elimination,Axe → Bare Hands,3
+SUS-27202f,ATM gas cutter robbery → Home invasion robbery,Gas Cutter → Bare Hands,5
+SUS-27202f,ATM gas cutter robbery → Home invasion robbery,Gas Cutter → Bare Hands,4
+SUS-27202f,ATM gas cutter robbery → Highway truck hijack,Gas Cutter → Bare Hands,3
+SUS-a91aff,Black magic sacrifice → Child labor racket,Knife → Bare Hands,2
+SUS-41e74a,UPI QR scam → Identity theft,Mobile → Bare Hands,3
+SUS-41e74a,UPI QR scam → Identity theft,Mobile → Bare Hands,2
+SUS-41e74a,UPI QR scam → Identity theft,Mobile → Bare Hands,5
+SUS-1494aa,Fake encounter killing → Witness elimination,Pistol → Bare Hands,3
+SUS-1494aa,Fake encounter killing → Sand mafia killing,Pistol → Country-made Gun,3
+SUS-1494aa,Fake encounter killing → Sand mafia killing,Pistol → Axe,5
+SUS-75fcb2,Land-related murder → Gang execution,Machete → Bare Hands,5
+SUS-75fcb2,Land-related murder → Honor killing,Machete → Knife,4
+SUS-75fcb2,Land-related murder → Gang execution,Machete → Bare Hands,4
+SUS-8910b8,Jewelry shop heist → Money laundering,Pistol → Bare Hands,4
+SUS-8910b8,Jewelry shop heist → Bank locker break-in,Pistol → Bare Hands,3
+SUS-5f35d3,Land-related murder → Revenge murder,Machete → Bare Hands,5
+SUS-5f35d3,Land-related murder → Revenge murder,Machete → Bare Hands,5
+SUS-069ba0,Jewelry shop heist → Cross-border smuggling,Hammer → Bare Hands,5
+SUS-069ba0,Jewelry shop heist → Bank locker break-in,Hammer → Bare Hands,4
+SUS-069ba0,Jewelry shop heist → Cross-border smuggling,Hammer → Bare Hands,3
+SUS-220325,Sand mafia killing → Witness elimination,Country-made Gun → Bare Hands,3
+SUS-220325,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,3
+SUS-1f2e9a,UPI QR scam → Fake job phishing,Mobile → Bare Hands,3
+SUS-1f2e9a,UPI QR scam → Bank account takeover,Mobile → Bare Hands,3
+SUS-f9ee8b,Fake encounter killing → Sand mafia killing,Country-made Gun → Axe,3
+SUS-f9ee8b,Fake encounter killing → Sand mafia killing,Country-made Gun → Axe,2
+SUS-e41cc1,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,3
+SUS-655cd2,Land-related murder → Honor killing,Machete → Poison,3
+SUS-655cd2,Land-related murder → Gang execution,Machete → Bare Hands,2
+SUS-655cd2,Land-related murder → Honor killing,Machete → Knife,3
+SUS-937e11,ATM gas cutter robbery → Temple hundi theft,Iron Pipe → Bare Hands,2
+SUS-937e11,ATM gas cutter robbery → Home invasion robbery,Iron Pipe → Bare Hands,2
+SUS-80b26e,Sand mafia killing → Fake encounter killing,Axe → Pistol,4
+SUS-80b26e,Sand mafia killing → Document forgery,Axe → Bare Hands,5
+SUS-80b26e,Sand mafia killing → Document forgery,Axe → Bare Hands,4
+SUS-903359,Black magic sacrifice → Organ trafficking,Rope → Bare Hands,4
+SUS-2b3cb5,Loan app blackmail → Family extortion,Laptop → Bare Hands,4
+SUS-2b3cb5,Loan app blackmail → Sextortion,Laptop → Bare Hands,4
+SUS-9de7f8,UPI QR scam → Bank account takeover,Mobile → Bare Hands,3
+SUS-c20c39,Black magic sacrifice → Fake encounter killing,Knife → Pistol,3
+SUS-c20c39,Black magic sacrifice → Child labor racket,Knife → Bare Hands,2
+SUS-c20c39,Black magic sacrifice → Organ trafficking,Knife → Bare Hands,2
+SUS-886331,Loan app blackmail → Sextortion,Laptop → Bare Hands,2
+SUS-886331,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,2
+SUS-886331,Loan app blackmail → Sextortion,Laptop → Bare Hands,3
+SUS-209897,Loan app blackmail → Family extortion,Laptop → Bare Hands,2
+SUS-209897,Loan app blackmail → Family extortion,Laptop → Bare Hands,5
+SUS-8ebab6,UPI QR scam → Fake job phishing,Mobile → Bare Hands,4
+SUS-8ebab6,UPI QR scam → Fake job phishing,Mobile → Bare Hands,2
+SUS-d79077,UPI QR scam → Bank account takeover,Mobile → Bare Hands,2
+SUS-d79077,UPI QR scam → Bank account takeover,Mobile → Bare Hands,3
+SUS-35d253,Sand mafia killing → Document forgery,Country-made Gun → Bare Hands,2
+SUS-35d253,Sand mafia killing → Fake encounter killing,Country-made Gun → Pistol,5
+SUS-f626fe,Jewelry shop heist → Money laundering,Hammer → Bare Hands,2
+SUS-f626fe,Jewelry shop heist → Bank locker break-in,Hammer → Bare Hands,4
+SUS-f626fe,Jewelry shop heist → Bank locker break-in,Hammer → Bare Hands,4
+SUS-1de8ac,Sand mafia killing → Document forgery,Axe → Bare Hands,2
+SUS-5f6405,Loan app blackmail → Sextortion,Laptop → Bare Hands,5
+SUS-5f6405,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,3
+SUS-5f6405,Loan app blackmail → Sextortion,Laptop → Bare Hands,3
+SUS-8b095c,Jewelry shop heist → Bank locker break-in,Hammer → Bare Hands,2
+SUS-8b095c,Jewelry shop heist → Money laundering,Hammer → Bare Hands,2
+SUS-8b095c,Jewelry shop heist → Cross-border smuggling,Hammer → Bare Hands,4
+SUS-1fae64,ATM gas cutter robbery → Highway truck hijack,Gas Cutter → Bare Hands,3
+SUS-1fae64,ATM gas cutter robbery → Home invasion robbery,Gas Cutter → Bare Hands,3
+SUS-1fae64,ATM gas cutter robbery → Temple hundi theft,Gas Cutter → Bare Hands,2
+SUS-c35acb,Black magic sacrifice → Organ trafficking,Knife → Bare Hands,5
+SUS-c35acb,Black magic sacrifice → Fake encounter killing,Knife → Pistol,3
+SUS-f05061,Fake encounter killing → Document forgery,Pistol → Bare Hands,3
+SUS-9c6935,Fake encounter killing → Sand mafia killing,Pistol → Axe,3
+SUS-9c6935,Fake encounter killing → Witness elimination,Pistol → Bare Hands,4
+SUS-472d38,Sand mafia killing → Witness elimination,Country-made Gun → Bare Hands,5
+SUS-472d38,Sand mafia killing → Fake encounter killing,Country-made Gun → Pistol,2
+SUS-8769a9,Land-related murder → Revenge murder,Sickle → Bare Hands,2
+SUS-8769a9,Land-related murder → Honor killing,Sickle → Knife,4
+SUS-8769a9,Land-related murder → Gang execution,Sickle → Bare Hands,4
+SUS-e4f217,Land-related murder → Honor killing,Sickle → Poison,5
+SUS-e93abc,UPI QR scam → Bank account takeover,Mobile → Bare Hands,5
+SUS-e93abc,UPI QR scam → Bank account takeover,Mobile → Bare Hands,2
+SUS-e93abc,UPI QR scam → Identity theft,Mobile → Bare Hands,3
+SUS-ac5310,Jewelry shop heist → Bank locker break-in,Crowbar → Bare Hands,3
+SUS-3d7210,Honor killing → Contract killing,Poison → Bare Hands,5
+SUS-3d7210,Honor killing → Contract killing,Poison → Bare Hands,3
+SUS-3d7210,Honor killing → Dowry death,Poison → Bare Hands,4
+SUS-9b75d5,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,4
+SUS-9b75d5,Loan app blackmail → Family extortion,Laptop → Bare Hands,5
+SUS-9b75d5,Loan app blackmail → Family extortion,Laptop → Bare Hands,4
+SUS-1cea3d,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,4
+SUS-1cea3d,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,4
+SUS-1cea3d,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,5
+SUS-cf3df0,Fake encounter killing → Document forgery,Country-made Gun → Bare Hands,3
+SUS-cf3df0,Fake encounter killing → Witness elimination,Country-made Gun → Bare Hands,3
+SUS-d53cc4,ATM gas cutter robbery → Temple hundi theft,Gas Cutter → Bare Hands,3
+SUS-d53cc4,ATM gas cutter robbery → Temple hundi theft,Gas Cutter → Bare Hands,4
+SUS-16ca15,Loan app blackmail → Family extortion,Laptop → Bare Hands,2
+SUS-2f3b41,Jewelry shop heist → Cross-border smuggling,Crowbar → Bare Hands,4
+SUS-2f3b41,Jewelry shop heist → Money laundering,Crowbar → Bare Hands,2
+SUS-2f3b41,Jewelry shop heist → Money laundering,Crowbar → Bare Hands,4
+SUS-db36ec,Jewelry shop heist → Cross-border smuggling,Hammer → Bare Hands,5
+SUS-db36ec,Jewelry shop heist → Cross-border smuggling,Hammer → Bare Hands,5
+SUS-db36ec,Jewelry shop heist → Cross-border smuggling,Hammer → Bare Hands,3
+SUS-da9d5a,Honor killing → Contract killing,Knife → Bare Hands,5
+SUS-52a50a,Jewelry shop heist → Money laundering,Crowbar → Bare Hands,5
+SUS-fbd2b7,UPI QR scam → Identity theft,Mobile → Bare Hands,3
+SUS-fbd2b7,UPI QR scam → Fake job phishing,Mobile → Bare Hands,4
+SUS-78ad63,UPI QR scam → Identity theft,Mobile → Bare Hands,3
+SUS-78ad63,UPI QR scam → Bank account takeover,Mobile → Bare Hands,5
+SUS-78ad63,UPI QR scam → Identity theft,Mobile → Bare Hands,5
+SUS-97c906,Black magic sacrifice → Fake encounter killing,Rope → Country-made Gun,4
+SUS-508166,UPI QR scam → Fake job phishing,Mobile → Bare Hands,4
+SUS-508166,UPI QR scam → Fake job phishing,Mobile → Bare Hands,2
+SUS-0b7c62,Loan app blackmail → Family extortion,Laptop → Bare Hands,3
+SUS-21f9e4,ATM gas cutter robbery → Home invasion robbery,Gas Cutter → Bare Hands,4
+SUS-21f9e4,ATM gas cutter robbery → Home invasion robbery,Gas Cutter → Bare Hands,5
+SUS-21f9e4,ATM gas cutter robbery → Temple hundi theft,Gas Cutter → Bare Hands,3
+SUS-ec1b4f,UPI QR scam → Bank account takeover,Mobile → Bare Hands,3
+SUS-ec1b4f,UPI QR scam → Bank account takeover,Mobile → Bare Hands,3
+SUS-2a799b,Honor killing → Acid attack murder,Poison → Acid,3
+SUS-2a799b,Honor killing → Contract killing,Poison → Bare Hands,3
+SUS-5c908b,Loan app blackmail → Suicide abetment,Laptop → Bare Hands,3
+SUS-b274ad,Jewelry shop heist → Bank locker break-in,Crowbar → Bare Hands,2
+SUS-7271a3,Land-related murder → Revenge murder,Sickle → Bare Hands,2
+SUS-7271a3,Land-related murder → Gang execution,Sickle → Bare Hands,2
+SUS-7271a3,Land-related murder → Revenge murder,Sickle → Bare Hands,2

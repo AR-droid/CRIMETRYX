@@ -1,0 +1,18 @@
+WeaponID,WeaponName,LethalityScore,AssociatedPattern
+WEP-255c35,Bare Hands,0.2,Fake job phishing
+WEP-a7c90a,Iron Pipe,0.6,ATM gas cutter robbery
+WEP-b58d1d,Rope,0.5,Black magic sacrifice
+WEP-cea68a,Pistol,0.9,Fake encounter killing
+WEP-4b9116,Country-made Gun,0.8,Sand mafia killing
+WEP-7dffa4,Machete,0.8,Land-related murder
+WEP-8e7e9b,Acid,0.95,Acid attack murder
+WEP-788ac7,Mobile,0.1,UPI QR scam
+WEP-875644,Laptop,0.1,Loan app blackmail
+WEP-8204ab,Axe,0.75,Sand mafia killing
+WEP-9eba2a,Gas Cutter,0.6,ATM gas cutter robbery
+WEP-5c5da3,Knife,0.75,Black magic sacrifice
+WEP-bc7f07,Crowbar,0.55,Jewelry shop heist
+WEP-8aa50d,Poison,0.9,Honor killing
+WEP-401a30,Hammer,0.6,Jewelry shop heist
+WEP-30c83b,Sickle,0.7,Land-related murder
+WEP-94eeea,Iron Rod,0.6,Land-related murder
