@@ -1,0 +1,89 @@
+import tweepy
+import pandas as pd
+from datetime import datetime
+
+# Twitter API credentials (replace with your own)
+API_KEY = "your_api_key"
+API_SECRET = "your_api_secret"
+ACCESS_TOKEN = "your_access_token"
+ACCESS_TOKEN_SECRET = "your_access_token_secret"
+
+# Authenticate with Twitter
+def authenticate_twitter():
+    try:
+        auth = tweepy.OAuthHandler(API_KEY, API_SECRET)
+        auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
+        api = tweepy.API(auth, wait_on_rate_limit=True)
+        return api
+    except Exception as e:
+        print(f"Error during authentication: {e}")
+        return None
+
+# Function to scrape tweets based on a query
+def scrape_tweets(api, query, count=100, lang="en", since_date="2025-04-01"):
+    try:
+        tweets = tweepy.Cursor(api.search_tweets,
+                             q=query,
+                             lang=lang,
+                             since=since_date,
+                             tweet_mode="extended").items(count)
+        
+        # List to store tweet data
+        tweet_data = []
+        
+        for tweet in tweets:
+            try:
+                data = {
+                    "created_at": tweet.created_at,
+                    "text": tweet.full_text,
+                    "username": tweet.user.screen_name,
+                    "followers_count": tweet.user.followers_count,
+                    "retweet_count": tweet.retweet_count,
+                    "favorite_count": tweet.favorite_count
+                }
+                tweet_data.append(data)
+            except AttributeError:
+                continue
+        
+        # Convert to DataFrame
+        df = pd.DataFrame(tweet_data)
+        return df
+    
+    except Exception as e:
+        print(f"Error during scraping: {e}")
+        return None
+
+# Function to save data to CSV
+def save_to_csv(df, filename="tweets.csv"):
+    try:
+        df.to_csv(filename, index=False)
+        print(f"Data saved to {filename}")
+    except Exception as e:
+        print(f"Error saving to CSV: {e}")
+
+# Main execution
+if __name__ == "__main__":
+    # Authenticate
+    api = authenticate_twitter()
+    
+    if api:
+        # Example query
+        search_query = "python programming -filter:retweets"
+        
+        # Scrape tweets
+        tweet_df = scrape_tweets(api, 
+                               query=search_query, 
+                               count=50, 
+                               lang="en", 
+                               since_date="2025-04-01")
+        
+        if tweet_df is not None and not tweet_df.empty:
+            # Display first few rows
+            print(tweet_df.head())
+            
+            # Save to CSV
+            save_to_csv(tweet_df, f"tweets_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv")
+        else:
+            print("No tweets found or error occurred during scraping.")
+    else:
+        print("Authentication failed.")
