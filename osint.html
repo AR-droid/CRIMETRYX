@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSINT Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --success-color: #2ecc71;
+            --warning-color: #f1c40f;
+            --danger-color: #e74c3c;
+        }
+
+        body {
+            background-color: #8B4513;
+            background-image: url('data:image/png;base64,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');
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-bottom: 40px;
+        }
+
+        .navbar {
+            background: #2c3e50 !important;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .container {
+            background: #b87333;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: inset 0 0 50px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 20px;
+        }
+
+        .monitor-card {
+            background: #fff9e6;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            transform: rotate(-0.5deg);
+        }
+
+        .monitor-card:hover {
+            transform: translateY(-5px) rotate(-0.5deg);
+            box-shadow: 8px 8px 25px rgba(0,0,0,0.4);
+        }
+
+        .message-container {
+            max-height: 400px;
+            overflow-y: auto;
+            padding: 10px;
+        }
+
+        .message {
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            background: #fff9e6;
+            border-left: 4px solid var(--accent-color);
+            transform: rotate(-0.5deg);
+        }
+
+        .message.high-risk {
+            border-left-color: var(--danger-color);
+            background: #fff5f5;
+        }
+
+        .message.medium-risk {
+            border-left-color: var(--warning-color);
+            background: #fff9e6;
+        }
+
+        .message.low-risk {
+            border-left-color: var(--success-color);
+            background: #f0fff4;
+        }
+
+        .keyword-tag {
+            display: inline-block;
+            padding: 4px 8px;
+            margin: 2px;
+            border-radius: 12px;
+            background: #e8f5fe;
+            color: #1da1f2;
+            font-size: 0.8em;
+        }
+
+        .sentiment-indicator {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .sentiment-positive {
+            background: var(--success-color);
+        }
+
+        .sentiment-negative {
+            background: var(--danger-color);
+        }
+
+        .sentiment-neutral {
+            background: var(--warning-color);
+        }
+
+        .stats-card {
+            background: #fff9e6;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+            transform: rotate(0.5deg);
+        }
+
+        .stats-card:hover {
+            transform: translateY(-5px) rotate(0.5deg);
+            box-shadow: 8px 8px 25px rgba(0,0,0,0.4);
+        }
+
+        .stats-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .search-box {
+            background: #fff9e6;
+            border-radius: 25px;
+            padding: 10px 20px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+            margin-bottom: 30px;
+            transform: rotate(-0.5deg);
+        }
+
+        .search-box input {
+            border: none;
+            width: 100%;
+            padding: 10px;
+            outline: none;
+            background: transparent;
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .filter-btn {
+            padding: 8px 16px;
+            border-radius: 20px;
+            background: #fff9e6;
+            border: 1px solid #8B4513;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            transform: rotate(-0.5deg);
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--accent-color);
+            color: #fff;
+            border-color: var(--accent-color);
+            transform: translateY(-2px) rotate(-0.5deg);
+        }
+
+        .map-container {
+            height: 400px;
+            background: #fff9e6;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+            transform: rotate(0.5deg);
+        }
+
+        .telegram-channel {
+            background: #fff9e6;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 4px solid #0088cc;
+            transform: rotate(-0.5deg);
+        }
+
+        .channel-name {
+            font-weight: 600;
+            color: #0088cc;
+        }
+
+        .subscriber-count {
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+
+        .channel-info {
+            font-size: 0.9em;
+        }
+
+        .channel-info a {
+            color: #0088cc;
+        }
+
+        .channel-info a:hover {
+            text-decoration: underline;
+        }
+
+        .call-records {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .call-record {
+            background: #fff9e6;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 4px solid #0088cc;
+            transform: rotate(0.5deg);
+        }
+
+        .call-number {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .call-time {
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+
+        .call-details {
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+
+        .call-duration {
+            margin-top: 5px;
+            font-size: 0.85em;
+        }
+
+        .text-success {
+            color: #2ecc71 !important;
+        }
+
+        .text-danger {
+            color: #e74c3c !important;
+        }
+
+        .form-control, .form-select {
+            background-color: #fff9e6;
+            border: 1px solid #8B4513;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .form-control:focus, .form-select:focus {
+            border-color: #2c3e50;
+            box-shadow: 0 0 0 0.25rem rgba(44, 62, 80, 0.25);
+        }
+
+        .input-group-text {
+            background-color: #2c3e50;
+            border-color: #2c3e50;
+            color: white;
+        }
+
+        .navbar-brand {
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-shield-alt me-2"></i>Crime Analysis
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">
+                            <i class="fas fa-chart-line me-1"></i>Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/predictions">
+                            <i class="fas fa-chart-bar me-1"></i>Predictions
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/graph">
+                            <i class="fas fa-project-diagram me-1"></i>Network
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/osint">
+                            <i class="fas fa-globe me-1"></i>OSINT
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <!-- Search Box -->
+        <div class="search-box">
+            <input type="text" placeholder="Search OSINT data...">
+        </div>
+
+        <!-- Stats Overview -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="stats-card">
+                    <i class="fas fa-globe fa-2x mb-2 text-primary"></i>
+                    <div class="stats-value">2,547</div>
+                    <div class="text-muted">Total Sources</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stats-card">
+                    <i class="fas fa-exclamation-triangle fa-2x mb-2 text-warning"></i>
+                    <div class="stats-value">156</div>
+                    <div class="text-muted">Active Alerts</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stats-card">
+                    <i class="fab fa-telegram fa-2x mb-2 text-info"></i>
+                    <div class="stats-value">847</div>
+                    <div class="text-muted">Telegram Channels</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stats-card">
+                    <i class="fas fa-clock fa-2x mb-2 text-success"></i>
+                    <div class="stats-value">24/7</div>
+                    <div class="text-muted">Monitoring</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="filter-buttons">
+            <button class="filter-btn active">All Sources</button>
+            <button class="filter-btn">Telegram</button>
+            <button class="filter-btn">Social Media</button>
+            <button class="filter-btn">News Articles</button>
+            <button class="filter-btn">Forums</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-8">
+                <div class="monitor-card">
+                    <h5 class="mb-4">Real-time OSINT Feed</h5>
+                    <div class="message-container" id="messageContainer">
+                        <!-- Messages will be dynamically added here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-4">
+                <div class="monitor-card">
+                    <h5 class="mb-4">Call Records</h5>
+                    <div class="call-records">
+                        <div class="call-record">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="call-number">+91 87782 74334</span>
+                                <span class="call-time">8:02 AM</span>
+                            </div>
+                            <div class="call-details">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-phone-alt me-2 text-success"></i>
+                                    <span>Outgoing Call</span>
+                                </div>
+                                <div class="call-duration">Duration: 2m 34s</div>
+                            </div>
+                        </div>
+                        <div class="call-record mt-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="call-number">+971 50 506 0471</span>
+                                <span class="call-time">Yesterday, 3:00 AM</span>
+                            </div>
+                            <div class="call-details">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-phone-alt me-2 text-danger"></i>
+                                    <span>Incoming Call</span>
+                                </div>
+                                <div class="call-duration">Duration: 5m 12s</div>
+                            </div>
+                        </div>
+                        <div class="call-record mt-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="call-number">+91 90479 94864</span>
+                                <span class="call-time">1:37 AM</span>
+                            </div>
+                            <div class="call-details">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-phone-alt me-2 text-success"></i>
+                                    <span>Outgoing Call</span>
+                                </div>
+                                <div class="call-duration">Duration: 1m 45s</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="monitor-card">
+                    <h5 class="mb-4">Telegram Channel Activity</h5>
+                    <div id="telegramActivity">
+                        <div class="telegram-channel">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="channel-name">@TamilSeriesCollection</span>
+                                <span class="subscriber-count">9,748 subscribers</span>
+                            </div>
+                            <div class="channel-info">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-phone me-2 text-primary"></i>
+                                    <span>+919790339415</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-link me-2 text-primary"></i>
+                                    <a href="https://t.me/+XJBxDAlBDesyOWNl" target="_blank" class="text-decoration-none">Join Channel</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="telegram-channel mt-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="channel-name">@ChennaiPoliceAlerts</span>
+                                <span class="subscriber-count">15,234 subscribers</span>
+                            </div>
+                            <div class="channel-info">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-phone me-2 text-primary"></i>
+                                    <span>+919790339415</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-link me-2 text-primary"></i>
+                                    <a href="#" target="_blank" class="text-decoration-none">Join Channel</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="telegram-channel mt-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="channel-name">@TamilNaduCrimeWatch</span>
+                                <span class="subscriber-count">12,567 subscribers</span>
+                            </div>
+                            <div class="channel-info">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-phone me-2 text-primary"></i>
+                                    <span>+919790339415</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-link me-2 text-primary"></i>
+                                    <a href="#" target="_blank" class="text-decoration-none">Join Channel</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="monitor-card">
+                    <h5 class="mb-4">Keyword Analysis</h5>
+                    <div id="keywordCloud">
+                        <!-- Keywords will be dynamically added here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map-container mt-4">
+            <h5 class="mb-3">Geographic Intelligence Distribution</h5>
+            <div id="osintMap" style="height: 100%; background: #f8f9fa;">
+                <!-- Map will be initialized here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Synthetic data for demonstration
+        const syntheticMessages = [
+            {
+                id: 1,
+                source: "Telegram Channel: CrimeAlert",
+                content: "Multiple reports of suspicious activity near Central Station. Pattern matches previous incidents.",
+                keywords: ["suspicious", "central station", "pattern"],
+                risk: "high",
+                timestamp: "2 minutes ago",
+                location: { lat: 13.0827, lng: 80.2707 }
+            },
+            {
+                id: 2,
+                source: "Telegram Channel: PoliceUpdates",
+                content: "Community alert: Series of shop break-ins reported in downtown area. Authorities investigating.",
+                keywords: ["break-ins", "downtown", "investigation"],
+                risk: "medium",
+                timestamp: "15 minutes ago",
+                location: { lat: 13.0827, lng: 80.2707 }
+            },
+            {
+                id: 3,
+                source: "Telegram Channel: LocalNews",
+                content: "Discussion about increased police presence in residential areas. Residents report feeling safer.",
+                keywords: ["police", "residential", "safety"],
+                risk: "low",
+                timestamp: "30 minutes ago",
+                location: { lat: 13.0827, lng: 80.2707 }
+            }
+        ];
+
+        // Function to create message element
+        function createMessageElement(message) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${message.risk}-risk`;
+            
+            const keywords = message.keywords.map(keyword => 
+                `<span class="keyword-tag">${keyword}</span>`
+            ).join('');
+
+            messageDiv.innerHTML = `
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="text-muted">${message.source}</span>
+                    <small class="text-muted">${message.timestamp}</small>
+                </div>
+                <p class="mb-2">${message.content}</p>
+                <div class="keywords">${keywords}</div>
+            `;
+
+            return messageDiv;
+        }
+
+        // Function to add messages to container
+        function addMessages() {
+            const container = document.getElementById('messageContainer');
+            syntheticMessages.forEach(message => {
+                container.appendChild(createMessageElement(message));
+            });
+        }
+
+        // Initialize messages
+        addMessages();
+
+        // Initialize Map
+        const map = L.map('osintMap').setView([13.0827, 80.2707], 12);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Add sample markers
+        const locations = [
+            {lat: 13.0827, lng: 80.2707, title: 'Chennai Central'},
+            {lat: 13.0674, lng: 80.2376, title: 'T. Nagar'},
+            {lat: 13.0878, lng: 80.2037, title: 'Anna Nagar'}
+        ];
+
+        locations.forEach(loc => {
+            L.marker([loc.lat, loc.lng])
+                .addTo(map)
+                .bindPopup(loc.title);
+        });
+
+        // Simulate real-time updates
+        function updateStats() {
+            const stats = {
+                totalSources: Math.floor(Math.random() * 1000) + 2000,
+                activeAlerts: Math.floor(Math.random() * 50) + 10,
+                telegramChannels: Math.floor(Math.random() * 500) + 1000,
+                monitoringStatus: "24/7"
+            };
+
+            document.querySelectorAll('.stats-value').forEach((el, index) => {
+                el.textContent = Object.values(stats)[index];
+            });
+        }
+
+        // Update stats every 5 seconds
+        setInterval(updateStats, 5000);
+        updateStats(); // Initial update
+
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                // Add filter functionality here
+            });
+        });
+
+        // Search functionality
+        const searchInput = document.querySelector('.search-box input');
+        searchInput.addEventListener('input', function(e) {
+            // Add search functionality here
+            console.log('Searching for:', e.target.value);
+        });
+    </script>
+</body>
+</html> 
